@@ -1,0 +1,54 @@
+class Movie {
+    constructor(title= '', studio = '', rating = 'PG',rating1 ='R') {
+       this.title = title;
+       this.studio = studio;
+       this.rating = rating;
+    }
+ 
+    getPG(movies = [], rating = '',rating1='') {
+       return movies.filter((m) => m.rating === rating)
+       return movies.filter((m) => m.rating1===rating1)
+    }
+}
+ 
+// SOLUTION FOR D
+const casionRoyaleMovie = new Movie('Casino Royale', 'Eon Productions', 'PG13');
+const leo = new Movie('Leo', 'LCU', 'PG');
+const vikram = new Movie('Vikram', 'Vijay', 'PG');
+const avatar = new Movie('Avatar: The water way', 'EROS', 'PG13');
+const avengers = new Movie('The avengers: End Game', 'LCU', 'PG');
+ 
+const moviesArray = [casionRoyaleMovie, leo, vikram, avatar, avengers];
+ 
+console.log(casionRoyaleMovie.getPG(moviesArray, 'PG'));
+const varisu=new Movie("varisu","productions","R")
+const thunivu=new Movie("thunivu","zee5productions","R1")
+
+console.log(casionRoyaleMovie.getPG(moviesArray, 'R'));
+
+2)class circle {
+constructor(radius='',string=''){
+this.radius=radius;
+this.string=string;
+}
+const circle=new circle('radius','string');
+const circle=[radius,string]
+console.log(radius,string)
+
+3)class person {
+constructor(name='',age='',qualification=''){
+this.name="name"
+this.age="age"
+this.qualification="qualification"
+}
+const person=new person('name','age','qualification')
+const person=[name,age,qualification]
+console.log(name,age,qualification)
+4) class uberprice {
+constructor(price='',kilometer driven=''){
+this.price="price"
+this.kilometer driven="kilometer driven"
+}
+const uberprice=new uberprice('price','kilometer driven')
+const uberprice=[price,kilometerdriven]
+console.log(price) 
